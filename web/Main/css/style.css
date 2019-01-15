@@ -1,4 +1,4 @@
-/**
+    /**
 * Template Name: Dashio
 * Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
 * Author: TemplateMag.com
@@ -48,6 +48,11 @@ h4 {
 
 .bold {
     font-weight: bold;
+}
+
+h5 {
+    font-size: 20px;
+    font-family: "Calibri";
 }
 
 /* BASIC THEME CONFIGURATION */
@@ -346,7 +351,7 @@ ul.sidebar-menu li ul.sub li:last-child{
 }
 
 ul.sidebar-menu li ul.sub li a {
-    font-size: 12px;
+    font-size: 16px;
     padding: 6px 0;
     line-height: 35px;
     height: 35px;
@@ -393,7 +398,7 @@ ul.sidebar-menu li a{
     text-decoration: none;
     display: block;
     padding: 15px 0 15px 10px;
-    font-size: 12px;
+    font-size: 18px;
     outline: none;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -3372,11 +3377,11 @@ ul.chat-available-user li a:hover {
 
 .go-top {
     margin-right: 1%;
-    margin-top: -25px;
+    margin-top: -40px;
     float: right;
     background: rgba(255,255,255,.5);
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
 }

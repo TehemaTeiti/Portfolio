@@ -66,10 +66,10 @@
               <span>Portfolio</span>
             </a>
             <ul class="sub">
-                <li><a href="generality.html"><i class="fa fa-list"></i>Generality</a></li>
-                <li class="active"><a href="descriptive.html"><i class="fa fa-pencil"></i>Description</a></li>
-                <li><a href="technical.html"><i class="fa fa-cog"></i>Technic</a></li>
-                <li><a href="analytical.html"><i class="fa fa-bar-chart-o"></i>Analysis</a></li>
+              <li><a href="generality.html"><i class="fa fa-list"></i>Generality</a></li>
+              <li class="active"><a href="descriptive.html"><i class="fa fa-pencil"></i>Description</a></li>
+              <li><a href="technical.html"><i class="fa fa-cog"></i>Technic</a></li>
+              <li><a href="analytical.html"><i class="fa fa-bar-chart-o"></i>Analysis</a></li>
             </ul>
           </li>
         </ul>
@@ -93,10 +93,7 @@
                     <a data-toggle="tab" href="#presentation">Presentation</a>
                   </li>
                   <li>
-                    <a data-toggle="tab" href="#curriculum" class="contact-map">Curriculum Vitae</a>
-                  </li>
-                  <li>
-                    <a data-toggle="tab" href="#acqtrain">My acquired training</a>
+                    <a data-toggle="tab" href="#experience">Details of the experiences</a>
                   </li>
                 </ul>
               </div>
@@ -106,32 +103,119 @@
                   <div id="presentation" class="tab-pane active">
                     <div class="row">
                       <!-- /col-md-6 -->
-                      <div class="col-lg-8 col-lg-offset-2 detailed">
-                        <h4>Presentation of my portfolio</h4>
+                      <div class="col-lg-10 col-lg-offset-1 detailed">
+                        <h4>Presentation of experiences linked to the training</h4>
                         <div class="row mt mb">
-                          <p>As part of my computer training specializing in the Innovative Smart Systems (ISS) at the
-                            "Institut National des Sciences Appliquées" in Toulouse,
-                            I have written this portfolio to present my experiences linked to this field, but also
-                            the knowledge and the skills I acquired through this formation.</p>
+                          <div class="adv-table">
+                            <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered">
+                              <thead>
+                                <tr class="d-flex">
+                                  <th colspan="4">Summary table of the whole course</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <!-- header -->
+                                <tr class="subheader">
+                                  <th class="center">DATE</th>
+                                  <th class="center">DURATION</th>
+                                  <th class="center">CONTEXT</th>
+                                  <th class="center">FUNCTIONS</th>
+                                </tr>
 
-                          <p>This portfolio is divided into four parts:
-                            <ul>
-                              <li><span class="bold">The generality</span>: corresponding to this current page, this is
-                                where I introduce my curriculum and give an
-                                overview of the ISS training.
-                              </li>
-                              <li><span class="bold">A descriptive part</span>: all my relevant experiences
-                                highlightning the knowledge and skills of this training are presented in this part</li>
-                              <li><span class="bold">A technical part</span>: during my training, I was confronted with
-                                problem situations. In this part,
-                                I talk about the difficulties I encountered in some situations and how I mobilized
-                                my skills and my knowledge, but also resources that I had at my disposal to solve them.
-                              </li>
-                              <li><span class="bold">An analytical part</span>: finally, in this part, I present all
-                                the knowledge and the skills I
-                                acquired through this formation.</li>
-                            </ul>
-                          </p>
+                                <!-- innovative project -->
+                                <tr>
+                                  <td>10/04/2018 to 01/22/2019</td>
+                                  <td>4 months</td>
+                                  <td>Innovative project: realization of a platform for the measurement of the air
+                                    quality of a big city. This project is in collaboration with the University of
+                                    Wollongong.</td>
+                                  <td>
+                                    <ul>
+                                      <li>Development of a web interface including data analysis and data
+                                        visualization through a map and graphs.</li>
+                                      <li>Communication between a Node.js server and TheThingsNetwork platform using
+                                        MQTT protocol for data sensor transfert, and storage of the data with MongoDB.
+                                      </li>
+                                      <li>Developement of a Rest API in order to communicate the data between a Node.js
+                                        server and the front-end application Angular.
+                                      </li>
+                                    </ul>
+                                  </td>
+                                </tr>
+
+                                <!-- smart devices -->
+                                <tr>
+                                  <td>10/01/2018 to 11/30/2018</td>
+                                  <td>2 months</td>
+                                  <td>Smart devices: design of an Arduino Uno board.</td>
+                                  <td>
+                                    <ul>
+                                      <li>Conception of the PCB, schematics and routing.</li>
+                                    </ul>
+                                  </td>
+                                </tr>
+
+                                <!-- Big data -->
+                                <tr>
+                                  <td>11/26/2018 to 12/22/2018</td>
+                                  <td>1 month</td>
+                                  <td>Big Data: analysis of a dataset about the Olympic Games.</td>
+                                  <td>
+                                    <ul>
+                                      <li>Implementation and interpretation of 4 graphs in order to deduce which
+                                        parameters impact on the winning of a medal.</li>
+                                    </ul>
+                                  </td>
+                                </tr>
+
+                                <!-- hackathon -->
+                                <tr>
+                                  <td>11/08/2018 to 11/09/2018</td>
+                                  <td>2 days</td>
+                                  <td>Hackathon: design of a biosensor mussel.</td>
+                                  <td>
+                                    <ul>
+                                      <li>Study on the mussel behaviors in order to determine if it is possible
+                                        to take advantage of it for water pollution measurement.
+                                      </li>
+                                      <li>Design of a low consumtpion waterproof device to monitor the mussel behavior
+                                        for
+                                        water pollution measurement using the LoRa network for data transmission.
+                                      </li>
+                                    </ul>
+                                  </td>
+                                </tr>
+
+                                <!-- soa -->
+                                <tr>
+                                  <td>01/14/2019 to 01/27/2019</td>
+                                  <td>2 weeks</td>
+                                  <td>Service Architecture: design and implementation of a service oriented
+                                    architecture for automatic
+                                    management of INSA rooms.
+                                  </td>
+                                  <td>
+                                    <ul>
+                                      <li>
+                                        Requirements analysis and design of a service oriented architecture for
+                                        management of INSA rooms.
+                                      </li>
+                                      <li>
+                                        Implementation and deployement of web services with a REST architecture using
+                                        JavaEE.
+                                      </li>
+                                      <li>
+                                        Communication between web services and OM2M platform to interact with sensors
+                                        and actuators.
+                                      </li>
+                                    </ul>
+                                  </td>
+                                </tr>
+
+
+                              </tbody>
+                            </table>
+                          </div>
                         </div>
                         <!-- /row -->
                       </div>
@@ -140,233 +224,12 @@
                     <!-- /PRESENTATION -->
                   </div>
                   <!-- /tab-pane -->
-                  <div id="curriculum" class="tab-pane">
-                    <div class="row">
-                      <!-- /col-md-6 -->
-                      <div class="col-lg-8 col-lg-offset-2 detailed">
-                        <h4>Curriculum Vitae</h4>
-                        <div class="row mt mb">
-                          Work in progress...
-                        </div>
-                        <!-- /row -->
-                      </div>
-                      <!-- /col-md-6 -->
-                    </div>
-                    <!-- /row -->
-                  </div>
-                  <!-- /tab-pane -->
-                  <div id="acqtrain" class="tab-pane">
+                  <div id="experience" class="tab-pane">
                     <div class="row">
                       <!-- /col-md-6 -->
                       <div class="col-lg-10 col-lg-offset-1 detailed">
-                        <h4>Acquired Training</h4>
-                        <div class="row mt mb">
-                          <div class="adv-table">
-                            <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered">
-                              <thead>
-                                <tr class="d-flex">
-                                  <th class="col-xs-5">Entitled</th>
-                                  <th class="col-xs-2">Organism</th>
-                                  <th class="col-xs-2">Year</th>
-                                  <th class="col-xs-3">Duration (in number of hours)</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <!-- SMART DEVICES -->
-                                <tr class="subheader">
-                                  <th>Smart Devices</th>
-                                  <th class="center">INSA</th>
-                                  <th class="center">2018 – 2019</th>
-                                  <th class="center">60.25</th>
-                                </tr>
-                                <tr>
-                                  <td>Sensor introduction</td>
-                                  <td></td>
-                                  <td></td>
-                                  <td class="center">11.25</td>
-                                </tr>
-                                <tr>
-                                  <td>Microcontrollers and Open Source-Hardware (M&OSH)</td>
-                                  <td></td>
-                                  <td></td>
-                                  <td class="center">27.5</td>
-                                </tr>
-                                <tr>
-                                  <td>Optical Sensors</td>
-                                  <td></td>
-                                  <td></td>
-                                  <td class="center">7.5</td>
-                                </tr>
-                                <tr>
-                                  <td>CAD, manufacturing and integration of nanotechnology sensors</td>
-                                  <td></td>
-                                  <td></td>
-                                  <td class="center">14</td>
-                                </tr>
+                        <h4>Detailes of the experiences</h4>
 
-                                <!-- Communication -->
-                                <tr class="subheader">
-                                  <th>Communication</th>
-                                  <th class="center">INSA</th>
-                                  <th class="center">2018 – 2019</th>
-                                  <th class="center">63.75</th>
-                                </tr>
-                                <tr>
-                                  <td>Protocols for connected objects</td>
-                                  <td></td>
-                                  <td></td>
-                                  <td class="center">33.25</td>
-                                </tr>
-                                <tr>
-                                  <td>Digital Wireless Communications for connected objects</td>
-                                  <td></td>
-                                  <td></td>
-                                  <td class="center">5</td>
-                                </tr>
-                                <tr>
-                                  <td>Energy for connected objects (recovery, transfer)</td>
-                                  <td></td>
-                                  <td></td>
-                                  <td class="center">7.5</td>
-                                </tr>
-                                <tr>
-                                  <td>Security for network of connected object</td>
-                                  <td></td>
-                                  <td></td>
-                                  <td class="center">7.5</td>
-                                </tr>
-                                <tr>
-                                  <td>Emerging network (SDN, NGN)</td>
-                                  <td></td>
-                                  <td></td>
-                                  <td class="center">10.5</td>
-                                </tr>
-
-                                <!-- Middleware and Service -->
-                                <tr class="subheader">
-                                    <th>Middleware and Service</th>
-                                    <th class="center">INSA</th>
-                                    <th class="center">2018 – 2019</th>
-                                    <th class="center">62</th>
-                                  </tr>
-                                  <tr>
-                                    <td>Service architecture</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td class="center">31</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Middleware of Internet of Things</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td class="center">14.75</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Adaptability: cloud and autonomic management</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td class="center">16.75</td>
-                                  </tr>
-                                  
-                                <!-- Analysis and Data Processing, Business Applications -->
-                                <tr class="subheader">
-                                    <th>Analysis and Data Processing, Business Applications</th>
-                                    <th class="center">INSA</th>
-                                    <th class="center">2018 – 2019</th>
-                                    <th class="center">37.5</th>
-                                  </tr>
-                                  <tr>
-                                    <td>Software Engineering</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td class="center">6.25</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Semantic Data</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td class="center">8</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Big Data</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td class="center">15</td>
-                                  </tr>
-                                  <tr>
-                                    <td>SPOC/Hackathon/Seminaries</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td class="center">8.25</td>
-                                  </tr>
-
-                                <!-- Innovative project -->
-                                <tr class="subheader">
-                                    <th>Innovative project</th>
-                                    <th class="center">INSA</th>
-                                    <th class="center">2018 – 2019</th>
-                                    <th class="center">80.75</th>
-                                  </tr>
-                                  <tr>
-                                    <td>Innovative project</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td class="center">37.5</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Portfolio</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td class="center">8.25</td>
-                                  </tr>
-                                  <tr>
-                                    <td>English</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td class="center">35</td>
-                                  </tr>
-
-                                <!-- Innovation and humanity -->
-                                <tr class="subheader">
-                                    <th>Innovation and humanity</th>
-                                    <th class="center">INSA</th>
-                                    <th class="center">2018 – 2019</th>
-                                    <th class="center">95.5</th>
-                                  </tr>
-                                  <tr>
-                                    <td>Innovation / Social Acceptability / Business development</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td class="center">20</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Creativity methods / TRIZ method</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td class="center">20.5</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Team Management</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td class="center">20</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Sport</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td class="center">25</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Individualized Professional Development</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td class="center">10</td>
-                                  </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
                         <!-- /row -->
                       </div>
                       <!-- /col-md-6 -->
