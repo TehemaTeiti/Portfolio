@@ -46,13 +46,19 @@ h4 {
     font-size: 24px;
 }
 
+h5 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .bold {
     font-weight: bold;
 }
 
-h5 {
-    font-size: 20px;
+#profilename {
+    font-size: 18px;
     font-family: "Calibri";
+    color: white;
 }
 
 /* BASIC THEME CONFIGURATION */
