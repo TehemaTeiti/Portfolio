@@ -90,30 +90,287 @@
               <div class="panel-heading">
                 <ul class="nav nav-tabs nav-justified">
                   <li class="active">
-                    <a data-toggle="tab" href="#technic">Technical part</a>
+                    <a data-toggle="tab" href="#project">Projects</a>
                   </li>
+                  <li>
+                    <a data-toggle="tab" href="#report">Reports</a>
+                  </li>
+                  <!-- <li>
+                    <a data-toggle="tab" href="#course">Courses</a>
+                  </li> -->
                 </ul>
               </div>
               <!-- /panel-heading -->
               <div class="panel-body">
                 <div class="tab-content">
-                  <div id="presentation" class="tab-pane active">
+
+                  <!-- BEGIN Project -->
+                  <div id="project" class="tab-pane active">
                     <div class="row">
                       <!-- /col-md-6 -->
-                      <div class="col-lg-10 col-lg-offset-1 detailed">
+                      <div class="col-lg-8 col-lg-offset-2 detailed">
 
                         <!-- INTRODUCTION -->
                         <h4>Introduction</h4>
                         <p>I was confronted with many problems through the projects. I will present in this part all
                           situations where I was confronted to these problems and how I solve them.</p>
 
-                          <!-- Innovative project -->
-                          <h4>Innovative project</h4>
+                        <!-- innovative project -->
+                        <div id="innovative_project">
+                          <h4>Innovative Project</h4>
+
+                          <h5>Presentation</h5>
+                          <p>
+                            “Social Network for Pollution” was the biggest project we had to made during this training
+                            which lasted four months. In collaboration with the University of Wollongong, our objective
+                            was to develop a platform to measure air quality from the design of the air quality sensor
+                            to the display of air quality data in a user-friendly interface.
+                          </p>
+
+                          <p>
+                            We split the work into two groups: one group on the design of the sensor and one group on
+                            the user interface and the data acquisition. As the University of Wollongong has already
+                            designed the package of the sensor and chosen the microcontroller, we used a LoPy
+                            microcontroller able to send data yo LoRa network thanks to an embedded LoRa module. The
+                            air quality sensor is in fact a device embedded several sensors: particle sensors, gas
+                            sensors, humidity sensor and temperature sensor. Because we want low cost solution with low
+                            power consumption, we tried to choose low cost components able to measure gases that we
+                            found relevant to determine the level of the air quality, and we use LoRa technology which
+                            is suitable for IoT applications thanks to low power consumption and long range. We also
+                            choose TheThingsNetwork (TTN) platform, a collaborative and open network using LoRa
+                            technology, to manage our data sensors.
+                          </p>
+                          <p>
+                            My work was essentially focused on the data communication from the cloud to our application
+                            and the storage process in order to provide these data to the user interface when a user
+                            access to our website.
+                          </p>
+
+                          <img src="img/project/global_architecture.jpg">
+
+                          <h5>Resolution of problem</h5>
+                          <p>
+                            During this project, I was confronted to three main problems: the data communication, the
+                            storage process and the data acquisition between a database and the user interface.
+                          </p>
+                          <p>
+                            Firstly, in group, we had to define clearly the global architecture of our application to
+                            understand the all the process and determine entities involving in the system.
+                          </p>
+                          <p>
+                            Secondly, we choose Node.js as a server to communicate with TTN in order to retrieve data
+                            from sensors. Several libraries are available with Node.js to communicate with TTN or a
+                            database, and Node.js is a event-based Javascript runtime, which allows to execute multiple
+                            tasks “at the same time”, so it can handle user requests and communicate with TTN in
+                            parallel.
+                          </p>
+                          <p>
+                            Thirdly, the storage process is made with MongoDB, a NoSQL database which is very flexible
+                            because of its non-structured system. In this way, it is possible to store data with
+                            different fields and if a new sensor enter the network with other type of data, it is easy
+                            to store them into the database.
+                          </p>
+                          <p>
+                            Finally, when a user wants to access data, the Node.js server have to provide a Rest API in
+                            order to allow a client application to ask him data. The Node.js server provide only a GET
+                            method in order to retrieve all data stored in the MongoDB database.
+                          </p>
+                          <h5>The knowledge and skill mobilized</h5>
+
+                          <p>The knowledge and skills I mobilize during this project was about web programming in
+                            Javascript for Node.js server, database creation and queries with MongoDB, the
+                            communication with TTN through MQTT protocol and the implementation of a Rest API in
+                            Javascript on the Node.js server. Also, I was able to define the architecture of our
+                            application.</p>
+
+                        </div>
+
+                        <!-- Smart device -->
+                        <div id="smart_device_project">
+                          <h4>Smart Device</h4>
+                          <h5>Presentation</h5>
+
+                          <p>The purpose of this project is to conceive the schematic impedance adaptation circuit in
+                            order to connect a gas sensor to the Arduino Uno. Me and my partner were from the computer
+                            science department, so it was the first time we designed an electronic circuit using KiCad.</p>
+
+                          <h5>Resolution of problem</h5>
+                          <p>
+                            The first problem was to get familiar with the software and to understand electronic
+                            concepts. To solve this problem, we learn with teacher slides and by searching on the
+                            internet how to use the software KiCad and what are the concepts behind schematics and
+                            layout we had to design.
+                          </p>
+                          <p>
+                            The second problem was to design components that the software do not implement. There are
+                            two: LTC1050 which is an amplifier the RN_Breakout2483 module corresponding to a LoRa
+                            module. To handle this problem, with follow example given by the teacher and we consult
+                            datasheets of these components to understand and design their symbol being aware with their
+                            pins characteristics.
+                          </p>
+
+
+                          <h5>The knowledge and skill mobilized</h5>
+                          <p>In this project, I learn how to use KiCad to design schematics and layout for PCB and how
+                            to create components that the library does not propose by reading the datasheet.</p>
+                        </div>
+
+                        <!-- Big data-->
+                        <div id="big_data">
+                          <h4>Big Data</h4>
+
+                        </div>
+
+                        <!-- SOA -->
+                        <div id="soa">
+                          <h4>Service Oriented Architecture</h4>
+
+                        </div>
+
+
                         <!-- /row -->
                       </div>
                       <!-- /col-md-6 -->
                     </div>
                   </div>
+                  <!-- END Project -->
+
+                  <!-- BEGIN Course -->
+                  <div id="course" class="tab-pane">
+                    <div class="row">
+                      <!-- /col-md-6 -->
+                      <div class="col-lg-10 col-lg-offset-1 detailed">
+
+                        <h4>Introduction</h4>
+
+                        <p>During this journey, we study on several fields related to the IoT domain. From electronical
+                          design of electronic components
+                          to data communication, but also about human concepts in team management and social
+                          psychology, we follow formation
+                          in order to understand, to design and to implement innovative products.</p>
+
+                        <!-- Smart Device -->
+                        <div id="smart_device">
+                          <h4>Smart Device</h4>
+
+                          <h5>Sensor introduction</h5>
+
+                          <p>In an IoT application, sensors are the base of the system. Different types of sensors
+                            exist to measure several phenomena.
+                            In the context of our formation, the goal of this course is to help for choosing a sensor,
+                            designing a measurement chain
+                            and to develop a "smart device". As we will certainly embed a sensor into an IoT system, it
+                            is important to take into
+                            account all these concepts to make the good choices.</p>
+                          <p>What we want for a sensor is the fiability and the accuracy. A sensor measure a specific
+                            (or several) phenomena and
+                            delivers a voltage depending on the value of the measurant.</p>
+                        </div>
+
+                        <!-- Communication -->
+                        <div id="communication">
+                          <h4>Communication</h4>
+
+                        </div>
+
+                        <!-- Middleware and Service -->
+                        <div id="middleware">
+                          <h4>Middleware and Service</h4>
+
+                        </div>
+
+                        <!-- big Data -->
+                        <div id="data_processing">
+                          <h4>Analysis and Data Processing, Business Application</h4>
+
+                        </div>
+
+                        <!-- Humanity -->
+                        <div id="humanity">
+                          <h4>Innovation and Humanity</h4>
+
+                        </div>
+
+                        <!-- /row -->
+                      </div>
+                      <!-- /col-md-6 -->
+                    </div>
+                  </div>
+                  <!-- END Course -->
+
+                  <!-- BEGIN Report -->
+                  <div id="report" class="tab-pane">
+                    <div class="row">
+                      <!-- /col-md-6 -->
+                      <div class="col-lg-8 col-lg-offset-2 detailed">
+
+                        <h4>Introduction</h4>
+
+                        <p>In this part, you will find all the document related to the projects made during this
+                          training.</p>
+
+                        <!-- innovative -->
+                        <div id="innovative">
+                          <h4>Innovative Project</h4>
+                          <div class="row mt mb">
+                            <embed src="pdf/PollutionProjectReport.pdf" type="application/pdf" width="100%" height="600px" />
+                          </div>
+                        </div>
+
+                        <!-- Smart Device -->
+                        <div id="smart_device">
+                          <h4>Smart Device</h4>
+                          <a href="https://github.com/MOSH-Insa-Toulouse/CHEN_TEITI_Gas_Sensor">Github Link</a>
+                        </div>
+
+                        <!-- Communication -->
+                        <div id="communication">
+                          <h4>Communication</h4>
+                          <div class="row mt mb">
+                            <embed src="pdf/5G_presentation.pdf" type="application/pdf" width="100%" height="600px" />
+                          </div>
+                          <div class="row mt mb">
+                            <embed src="pdf/SDR_Report.pdf" type="application/pdf" width="100%" height="600px" />
+                          </div>
+
+                          <div class="row mt mb">
+                            <embed src="pdf/MAC_Layer_Report.pdf" type="application/pdf" width="100%" height="600px" />
+                          </div>
+
+                          <div class="row mt mb">
+                            <embed src="pdf/NB_IoT_Report.pdf" type="application/pdf" width="100%" height="600px" />
+                          </div>
+
+                          <div class="row mt mb">
+                            <embed src="pdf/Zigbee_exercise.pdf" type="application/pdf" width="100%" height="600px" />
+                          </div>
+                        </div>
+
+                        <!-- Middleware and Service -->
+                        <div id="middleware">
+                          <h4>Middleware and Service</h4>
+                          <div class="row mt mb">
+                            <embed src="pdf/OM2M_Report.pdf" type="application/pdf" width="100%" height="600px" />
+                          </div>
+                        </div>
+
+                        <!-- big Data -->
+                        <div id="data_processing">
+                          <h4>Analysis and Data Processing, Business Application</h4>
+                          <div class="row mt mb">
+                            <embed src="pdf/BigData_Report.pdf" type="application/pdf" width="100%" height="600px" />
+                          </div>
+                        </div>
+                        <div class="row mt mb">
+                          <embed src="pdf/WebSem_Report.pdf" type="application/pdf" width="100%" height="600px" />
+                        </div>
+
+                        <!-- /row -->
+                      </div>
+                      <!-- /col-md-6 -->
+                    </div>
+                  </div>
+                  <!-- END Report -->
                 </div>
                 <!-- /tab-content -->
               </div>

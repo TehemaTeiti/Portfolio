@@ -20,6 +20,16 @@ Website: http://Alvarez.is/
     display: block;
 }
 
+.holder{
+    width: auto;
+    display: inline-block;
+}
+
+.holder img {
+    width: 30%;
+    height: auto;
+}
+
 #presentation li:before {
     /*Using a Bootstrap glyphicon as the bullet point*/
     content: "\e080";
@@ -73,7 +83,7 @@ body {
     font-family: 'Calibri', sans-serif;
     padding: 0px !important;
     margin: 0px !important;
-    font-size:18px;
+    font-size:20px;
     line-height:1.8;
 }
 

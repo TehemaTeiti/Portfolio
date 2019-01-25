@@ -95,9 +95,6 @@
                   <li>
                     <a data-toggle="tab" href="#experience">Details of the experiences</a>
                   </li>
-                  <li>
-                    <a data-toggle="tab" href="#course">Details of courses</a>
-                  </li>
                 </ul>
               </div>
               <!-- /panel-heading -->
@@ -109,7 +106,8 @@
                       <div class="col-lg-10 col-lg-offset-1 detailed">
                         <h4>Presentation of experiences linked to the training</h4>
                         <div class="row mt mb">
-                          <p>During this formation, I made several projects related to the IoT in pair or in a larger team.
+                          <p>During this formation, I made several projects related to the IoT in pair or in a larger
+                            team.
                             Here I present an overview of all experiences that I found relevant on this context.</p>
                           <div class="adv-table">
                             <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered">
@@ -232,8 +230,13 @@
                   <div id="experience" class="tab-pane">
                     <div class="row">
                       <!-- /col-md-6 -->
-                      <div class="col-lg-10 col-lg-offset-1 detailed">
+                      <div class="col-lg-8 col-lg-offset-2 detailed">
                         <h4>Introduction</h4>
+
+                        <p>In this part, I will present you an overview of projects I was in charge of during the ISS
+                          program. Most importantly, I will give the context of these subjects in order to understand
+                          the environment I was evolved and how the development of my skills within these contexts has
+                          occurred.</p>
 
                         <!-- Innovative project -->
                         <h4>Innovative Project</h4>
@@ -246,14 +249,26 @@
                         <p>This project is the main project for the Innovative Smart System training as it combines
                           electronic and computer science skills. For this project, our team is composed of five
                           students: two from electronic domain and three from the computer science domain. We divided
-                          the project into two parts: an electronic part and a software part.</p>
+                          the project into two parts: an electronic part and a software part. In this way, we intend to
+                          develop a platform composed of the air quality sensor with all the electronics it involves
+                          (gas sensor, particle sensor, communication module,...) , a web interface to access air
+                          quality data and all the communication architecture needed to transmit data from devices to
+                          the user interface.</p>
+
+                        <div class="holder centered">
+                          <img src="img/project/photo_sensor.jpg">
+                        </div>
 
                         <h5>My function</h5>
                         <p>As I am a computer science student, I was part of the computer science team. Our missions
                           were to develop a web interface and to analyze data measured by the air quality sensor in
                           order to interpret them and show them on the interface through graphs and a map. One member
                           of the team has already developed a website using Angular, so we decide to use this
-                          technology to develop our website.</p>
+                          technology to develop our website. As data have to be accessed at anytime, it is important to
+                          store them into a database and provide them when needed. To do so, I was in charge of the
+                          storage process but also the communication between the sensors and our application.</p>
+
+                        <img src="img/project/overview.JPG">
 
                         <!-- Smart devices -->
                         <h4>Smart Devices</h4>
@@ -263,7 +278,7 @@
                           experience with microcontrollers and their architecture, and their use with sensors in order
                           to collect data from these sensors and send these data on a low power wide area network as
                           LoRa. As a student coming from computer science domain, it was my first time working on an
-                          Arduino microcontroller and designing electronical circuits.</p>
+                          Arduino microcontroller and designing electronic circuits.</p>
                         <p>We had to make a project in pair which consists of designing an Arduino shield in order to
                           connect a gas sensor to an Arduino Uno. The Arduino collects data from the sensor and send
                           them to a LoRa module which communicates them on The Things Network.</p>
@@ -281,43 +296,54 @@
                         <p>Secondly, we made the layout of the PCB from the schematic by arranging components on the
                           board and routing them.</p>
 
-                        <img src="img/smart_device/pcb_routing.png">
+                        <img src="img/smart_device/pcb_routing.png" width="100%">
 
 
                         <!-- Big data -->
                         <h4>Big Data</h4>
                         <h5>The environment and context</h5>
-                        <p></p>
+                        <p>Massive amount of data are generated related to several fields, from the sales of a
+                          electronic store to the inventory of european restaurants classified by popularity. Data
+                          analysis allows to understand phenomena in the world using statistical functions regarding
+                          data studied. To do so, this project aims to initiate on data analysis using R language to
+                          process data set provided by specialized website like kaggle. For this project, we decided to
+                          analyze data set from kaggle about the history of the Olympic Games since Athens 1896. This
+                          data set contains 271 116 observations representing the results for each athletes, regarding
+                          many information like the year, the country, the team...</p>
+
+                        <p>You can find the data set at the following link: <a href="https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results/home">120
+                            years of Olympic history: athletes and results</a></p>
+                        <h5>My function</h5>
+                        <p>In pair, we had to define four interesting graphs to analyze data set about the history of
+                          the Olympic Games. We were interested to answer the following question: what are the
+                          parameters that impact on the winning a medal at the Olympic Games ? In order to answer this
+                          issue, we focus our analyze mainly on the native country of the athletes, their weight
+                          compared to their height and the age. For this, we used the R language and RStudio IDE to
+                          implement functions for the analysis and to plot graphs.</p>
+
+                        <!-- SOA -->
+                        <h4>Service Oriented Architecture</h4>
+                        <h5>The environment and context</h5>
+                        <p>Service oriented architecture (SOA) is a way to design distributed applications with
+                          services provided on the web and accessible for remote applications. In IoT applications, SOA
+                          are useful thanks to their flexibility and by providing services to clients who wants to use
+                          specific technologies. To do so, we had to made a project about a web application that will
+                          manage INSA’s rooms in an automatic way, by communicate with infrastructures able to interact
+                          with sensors and actuators installed in the rooms. A user can specify scenarios that he wants
+                          to implement from a user interface (for example define a maximal temperature for a room and,
+                          when the room’s temperature is too high, the application will automatically open windows to
+                          cool down the room).</p>
 
                         <h5>My function</h5>
-                        <p></p>
-                        <!-- /row -->
-                      </div>
-                      <!-- /col-md-6 -->
-                    </div>
-                    <!-- /row -->
-                  </div>
-                  <!-- /tab-pane -->
-                  <div id="course" class="tab-pane">
-                    <div class="row">
-                      <!-- /col-md-6 -->
-                      <div class="col-lg-10 col-lg-offset-1 detailed">
-                        <h4>Introduction</h4>
+                        <p>In pair, we had to developed an application that includes the user interface, the web
+                          server, the web services and the communication with actuators and sensors. To do so, we used
+                          Java EE which provides tools to develop a web server and web services. We also planned our
+                          work with an agile method, Scrum, with the help of IceScrum. Our application is basic,which
+                          intends to provide the following features: light management, window management and blind
+                          management. All these features involve light sensors, presence sensors, temperature sensors,
+                          windows, lamps and blinds. The following use case diargam shows the functionnalities of our application</p>
 
-                        <p>During this journey, we study on several fields related to the IoT domain. From electronical design of electronic components
-                        to data communication, but also about human concepts in team management and social psychology, we follow formation
-                        in order to understand, to design and to implement innovative products.</p>
-
-                        <!-- Smart devices -->
-                        <h4>Smart Devices</h4>
-                        <h5>Sensor introduction</h5>
-                        <p>In an IoT application, sensors are the base of the system. Different types of sensors exist to measure several phenomena.
-                        In the context of our formation, the goal of this course is to help for choosing a sensor, designing a measurement chain
-                        and to develop a "smart device". As we will certainly embed a sensor into an IoT system, it is important to take into
-                        account all these concepts to make the good choices.</p>
-                        <p>What we want for a sensor is the fiability and the accuracy. A sensor measure a specific (or several) phenomena and
-                        delivers a voltage depending on the value of the measurant.</p>
-                        <p></p>
+                          <img src="img/soa/Use Case Diagram.png" alt="">
                         <!-- /row -->
                       </div>
                       <!-- /col-md-6 -->
